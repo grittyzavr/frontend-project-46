@@ -16,6 +16,7 @@
     "url": "https://github.com/grittyzavr/frontend-project-46/issues"
   },
   "homepage": "https://github.com/grittyzavr/frontend-project-46#readme",
+  "type": "module",
   "dependencies": {
     "commander": "^10.0.0"
   }
