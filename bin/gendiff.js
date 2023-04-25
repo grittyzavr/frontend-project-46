@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import compare from '../src/compare.js';
+import parse from '../src/parse.js';
 
 const program = new Command();
 
@@ -13,3 +15,8 @@ program
   .option('-f, --format <type>', 'output format');
 
 program.parse();
+
+const filepath1 = program.args[0];
+const filepath2 = program.args[1];
+
+parse(filepath1, filepath2);
